@@ -17,7 +17,7 @@ if (!score) {
 
 scoreEl.innerText = `score: ${score}`;
 
-questionEl.innerText = `What is ${num1} multiply by ${num2}?`;
+questionEl.innerText = `Quanto é ${num1} multiplicado por ${num2}?`;
 
 const correctAns = num1 * num2;
 
@@ -35,3 +35,7 @@ formEl.addEventListener("submit", () => {
 function updateLocalStorage() {
   localStorage.setItem("score", JSON.stringify(score));
 }
+
+document.querySelector(".again").addEventListener("click", function () {
+  score = 1;
+});

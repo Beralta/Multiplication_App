@@ -49,6 +49,23 @@ body {
 }
 
 .score {
+  display: inline-block;
   font-family: cursive;
-  text-align: left;
+}
+
+.again {
+  padding: 10px;
+  height: 42px;
+  border: solid black;
+  background: rgb(255, 255, 79);
+  cursor: pointer;
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
